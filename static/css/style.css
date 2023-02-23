@@ -1,0 +1,519 @@
+:root {
+    --main-color: #863503;
+    --title-color: #05520D;
+    --input-color: #7D0202;
+    --size-24: 24px;
+    --size-28: 28px;
+    --fw-bold: 600;
+}
+
+@font-face {
+    font-family: 'Lucida-400';
+    src: url(../fonts/LBRITE.TTF);
+}
+
+.active-nav {
+    border-bottom: 1px solid #056B11;
+}
+
+.page-title {
+    font-family: 'Lucida-400';
+    font-size: var(--size-28);
+    color: var(--title-color);
+    font-weight: var(--fw-bold);
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center span, .text-center p {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #863503;
+}
+
+.text-center p {
+    margin: 40px 0 80px;
+}
+
+.ticked-sign {
+    margin-bottom: 108px;
+}
+
+.thank-you {
+    margin-bottom: 264px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 30px 0;
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+li:nth-child(4) {
+    margin-left: 160px;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'LUCIDA-400';
+    color: var(--main-color);
+    font-size: var(--size-24);
+    font-weight: var(--fw-bold);
+    line-height: var(--size-28);
+}
+
+header form input {
+    background-color: rgba(210, 158, 126, 0.1);
+    border-radius: 7px;
+    padding: 10px 11px;
+    border: none;
+}
+
+header form {
+    position: relative;
+}
+
+header form button {
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+header li {
+    padding-bottom: 14px;
+}
+
+header li:not(:nth-child(4)):hover {
+    border-bottom: 1px solid #056B11;
+}
+
+.contact-page-title p {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+    margin-top: 30px;
+}
+
+.contact-page-title {
+    margin-bottom: 100px;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    padding: 20px 40px;
+}
+
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder {
+    color: var(--input-color);
+    font-family: 'Lucida-400';
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.required {
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+.required span:nth-child(1) {
+    color: #FF0000;
+    font-weight: var(--fw-bold);
+}
+
+.required span:nth-child(2) {
+    color: var(--input-color);
+    font-weight: var(--fw-bold);
+}
+
+.form-wrapper textarea {
+    grid-column: 1/3;
+    resize: none;
+}
+
+.submit {
+    justify-self: end;
+    grid-column: 2/3;
+    border: 2px solid #05520D;
+    border-radius: 20px;
+    width: 137px;
+    text-align: center;
+    margin-bottom: 226px;
+}
+
+.submit-button {
+    font-family: 'Lucida-400';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    left: 150px;
+    top: 91px;
+}
+
+.heading {
+    height: 826px;
+    background-color: rgba(134, 53, 3, 0.07);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 150px;
+}
+
+.main-text {
+    width: 557px;
+}
+
+.heading h1 {
+    margin-top: 261px;
+    font-family: 'Lucida-400';
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    font-weight: var(--fw-bold);
+}
+
+.main-text p {
+    font-family: 'Lucida-400';
+    font-size: var(--size-24);
+    line-height: var(--size-28);
+    color: var(--main-color);
+    margin-top: 50px;
+}
+
+.home-image {
+    margin-top: 100px;
+}
+
+.home-container {
+    padding: 126px 167px 165px;
+}
+
+.home-container h2 {
+    width: 267px;
+    padding: 0 0 21px 0;
+    margin-bottom: 89px;
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--main-color);
+    border-bottom: 1.5px solid #056B11;
+}
+
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 59px 16%;
+}
+
+.product-card {
+    width: 267px;
+}
+
+.product-card img {
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card h3 {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: var(--size-24);
+    color: #05520D;
+}
+
+.product-card span {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--main-color);
+}
+
+.home-container button {
+    padding: 10px 27px;
+    border: 2px solid #05520D;
+    border-radius: 15px;
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer-container {
+    padding: 36px 169px 33px;
+    background-color: rgba(134, 53, 3, 0.07);
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr;
+    grid-gap: 177px;
+}
+
+.more-options-wrapper {
+    width: 100%;
+    text-align: right;
+}
+
+.first-column, .second-column, .third-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-column, .third-column {
+    gap: 35px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 35px;
+    margin-top: 41px;
+}
+
+.first-column {
+    gap: 66px;
+}
+
+.first-column span {
+    font-family: 'Lucida-400';
+    font-size: var(--size-24);
+    line-height: var(--size-28);
+    color: #400404;
+}
+
+.second-column h4, .third-column h4 {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: 24px;
+    color: #05520D;
+}
+
+.second-column address, .third-column address {
+    font-family: 'Lucida-400';
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--main-color);
+}
+
+.third-column button {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+}
+
+.filters a {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: var(--size-24);
+    font-size: var(--size-28);
+    text-decoration: none;
+}
+
+.filters a:not(.active-filter) {
+    color: rgba(134, 53, 3, 0.7);
+}
+
+.active-filter {
+    color: #863503;
+}
+
+.filters a:not(.last-filter) {
+    padding: 0 27px 0 0;
+    border-right: 1px solid #000000;
+}
+
+.menu-container {
+    padding: 110px 169px 192px;
+}
+
+.menu-product {
+    display: flex;
+    gap: 54px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.product-info h3 {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: 24px;
+    color: #05520D;
+}
+
+.product-info span {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--main-color);
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15%;
+    row-gap: 79px;
+}
+
+.loactions-container {
+    padding: 74px 248px 204px;
+}
+
+.loactions-container h1 {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: var(--size-28);
+    line-height: 33px;
+    color: #05520D;
+    margin-bottom: 109px;
+    text-align: center;
+}
+
+.branches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.branches span, .branches address {
+    font-family: 'Lucida-400';
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.branches address {
+    font-weight: var(--fw-bold);
+    color: var(--main-color);
+}
+
+.working-hours span {
+    color: var(--main-color);
+}
+
+.branch-comment span {
+    color: var(--input-color);
+}
+
+.addresses, .working-hours, .branch-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+}
+
+.working-hours {
+    align-items: center;
+}
+
+.branch-comment {
+    align-items: flex-end;
+}
+
+.map {
+    margin-top: 162px;
+    text-align: center;
+}
+
+.about-container {
+    padding: 125px 191px 133px;
+}
+
+.about-container h2 {
+    font-family: 'Lucida-400';
+    font-weight: var(--fw-bold);
+    font-size: var(--size-28);
+    line-height: 33px;
+    color: #05520D;
+}
+
+.our-history h2, .our-mission h2 {
+    margin-left: 75px;
+}
+
+.our-vision h2 {
+    margin-left: 821px;
+}
+
+.about-container p {
+    font-family: 'Lucida-400';
+    font-size: 24px;
+    line-height: 42px;
+    color: var(--main-color);
+    width: 475px;
+}
+
+.about-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-vision div {
+    flex-direction: row-reverse;
+}
+
+.our-mission, .our-vision {
+    margin-top: 162px;
+}
